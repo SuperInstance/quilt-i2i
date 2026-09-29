@@ -7,7 +7,7 @@ compatibility_date = "2026-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "i2i-ledger"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "fa85916d-e414-4673-8610-2a73cf015c63"
 
 # Vectorize — the shared semantic index (bge-m3, 1024 dims, cosine)
 [[vectorize]]
