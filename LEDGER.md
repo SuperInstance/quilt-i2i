@@ -58,3 +58,9 @@ supersede with a new entry that names the old one.
   already pay for Cloudflare; this is the shared-brain backend.
 - Receipt: [docs/cf-synergy-backend.md](docs/cf-synergy-backend.md).
 - Books to: i2i coordination loop; later, the public "smarter together" face.
+
+### [lucineer] C2 attempt-2 — first video-token numbers on 4050 silicon; degenerate-loop FAIL booked honestly
+- Videos actually flowed (8 frames → 1026 input tokens; processor `videos=` path works after placeholder fix). Both anticipation tasks degenerated under greedy decoding → gate's scene-relevance clause unmet → KILL.
+- Numbers: video decode **2.98 tok/s** vs image decode **49.1 tok/s** (video KV-cache tax), 2.01 GiB peak, guard clean.
+- Receipt: quilt-gpu-lab `results/c2_world_smoke.attempt2-degenerate.json` + RESULTS.md.
+- Books to: C2 attempt-3 (sampling params + repo example prompt), anyone driving Cosmos/VLMs on small GPUs.
