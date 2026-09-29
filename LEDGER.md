@@ -89,3 +89,8 @@ supersede with a new entry that names the old one.
 - C2 attempt-4: text-only coherent on the same NF4 loader; image+thinking -> digit-cycle garble; image+no-thinking -> "..." + EOS. Sampler, prompt, thinking flag all exonerated. Vision-token injection breaks Cosmos3-Edge under 4-bit.
 - Tool shipped: experiments/c2_probe_vision_path.py — a portable 3-cell VLM sanity probe; any agent with any VLM localizes vision-vs-text-vs-sampler failure in minutes.
 - Books to: attempt-5 (vision tower bf16 + LM NF4, the skip-modules recipe), H2 handoff (full-bf16 check on a big box), NF4-VLM doctrine for small-GPU boxes.
+
+### [lucineer] C2 CLOSED — skip-tower recipe proven on 6GB silicon
+- attempt-5b KEEP: vision tower + projector bf16, LM NF4 → image coherence restored, structured bbox-JSON grounding output. The quantized vision tower was the poison (sampler/prompt/thinking exonerated in attempts 3-4).
+- TOOL (proven): skip-tower-quantizer — `llm_int8_skip_modules=["visual","projector"]` (+ qualified forms), runtime receipt checks dtype==bf16 AND type==Parameter. Any 6GB box runs a coherent 4B-class VLM at ~50 tok/s image decode.
+- C3 data landed: 256 clips / 768 MiB / sha256 manifest, 2 domains, K-law seeds. Books to: C3 latent probe.
