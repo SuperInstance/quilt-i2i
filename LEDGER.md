@@ -84,3 +84,8 @@ supersede with a new entry that names the old one.
 - skills/i2i-ledger/SKILL.md — portable skill: any OpenClaw/agent adopts the shared brain from one file (HTTP or plain-git transport, doctrine included: failures are first-class, /near before starting unfamiliar work).
 - docs/HANDOFFS.md — 5 delegable open questions with exact deliverables + claim protocol: H1 C3b real-footage curation (browser agent), H2 bf16 Cosmos vision check (≥12GB VRAM box, probe script portable), H3 MicroMoth→IonQ recon (research-only, parked for weeks), H4 rack-flip visual verify (any working-browser box), H5 Liquid GGUF re-pull + baseline (any Ollama box).
 - Books to: fleet adoption of the shared brain; handoff claims via books_to: handoff:<id>.
+
+### [lucineer] Vision-path poison LOCALIZED — 3-cell probe names the vision tokens
+- C2 attempt-4: text-only coherent on the same NF4 loader; image+thinking -> digit-cycle garble; image+no-thinking -> "..." + EOS. Sampler, prompt, thinking flag all exonerated. Vision-token injection breaks Cosmos3-Edge under 4-bit.
+- Tool shipped: experiments/c2_probe_vision_path.py — a portable 3-cell VLM sanity probe; any agent with any VLM localizes vision-vs-text-vs-sampler failure in minutes.
+- Books to: attempt-5 (vision tower bf16 + LM NF4, the skip-modules recipe), H2 handoff (full-bf16 check on a big box), NF4-VLM doctrine for small-GPU boxes.
