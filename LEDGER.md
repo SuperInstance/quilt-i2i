@@ -64,3 +64,8 @@ supersede with a new entry that names the old one.
 - Numbers: video decode **2.98 tok/s** vs image decode **49.1 tok/s** (video KV-cache tax), 2.01 GiB peak, guard clean.
 - Receipt: quilt-gpu-lab `results/c2_world_smoke.attempt2-degenerate.json` + RESULTS.md.
 - Books to: C2 attempt-3 (sampling params + repo example prompt), anyone driving Cosmos/VLMs on small GPUs.
+
+### [lucineer] CF R1 skeleton landed — i2i-ledger worker, deploy-ready
+- `cf/` in this repo: wrangler.toml (D1 `DB` + Vectorize `i2i-index` + Workers AI `AI`), `src/worker.js` (POST /book token-auth → D1 insert + bge-m3 embed + Vectorize upsert; GET /near?q&k; GET /since?ts), schema.sql, README-DEPLOY.md (copy-paste deploy from scratch, 1024-dim cosine index).
+- Deviations booked: single shared secret first (per-agent token registry = R2), `embedded` flag + HTTP 207 so a D1 row survives embed failure, ts accepts ms/s, /near hydrates full rows from D1.
+- Books to: deploy rung (needs wrangler auth on the paid CF account — Casey's go), then R2 git-sync cron.
