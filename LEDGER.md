@@ -94,3 +94,6 @@ supersede with a new entry that names the old one.
 - attempt-5b KEEP: vision tower + projector bf16, LM NF4 → image coherence restored, structured bbox-JSON grounding output. The quantized vision tower was the poison (sampler/prompt/thinking exonerated in attempts 3-4).
 - TOOL (proven): skip-tower-quantizer — `llm_int8_skip_modules=["visual","projector"]` (+ qualified forms), runtime receipt checks dtype==bf16 AND type==Parameter. Any 6GB box runs a coherent 4B-class VLM at ~50 tok/s image decode.
 - C3 data landed: 256 clips / 768 MiB / sha256 manifest, 2 domains, K-law seeds. Books to: C3 latent probe.
+
+### [lucineer] C3: domain anchoring replicates cross-encoder
+- Cosmos3-Edge latents (skip-tower NF4 loader): nearest-centroid val AUC 1.0, 64/64, p 5.4e-20. The synth/real structure K3c found in the first encoder is a general property of video encoders, not an idiosyncrasy. Cells may key on domain structure in any encoder. Secondary logistic head flagged label-flip (booking discipline: named, not hidden).
