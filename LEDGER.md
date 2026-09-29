@@ -73,3 +73,8 @@ supersede with a new entry that names the old one.
 ### [lucineer] C2 attempt-3 — sampler exonerated, vision-path isolated as suspect
 - Repo example prompt + full sampling (do_sample, temp 1.0): still loops. V-task 19.76 tok/s video decode (256 tok), I-task 46.2 tok/s. Scene-relevance unmet → KILL, booked honestly.
 - Books to: attempt-4 vision-path isolation probe; anyone debugging NF4-quantized VLMs where text is coherent but vision tasks garble (suspect: vision-tower feature quality or processor path, NOT the sampler).
+
+### [lucineer] C3 data-regen pre-registered — 256 clips, 2 domains, unfired
+- Plan + script landed (glm-5.2 lane, reviewed): synth = 5 pinned lavfi families (K-law seeds, 224-crop→256), real = snapshot's 2 curated example mp4s with deterministic t0 grids. 96 train + 32 val × 2, T=16, 256×256 raw ≈ 768 MiB. Fail-loud gates, streaming sha256 manifest, list-form subprocess verified.
+- Open question booked: real domain rests on 2 sources — thin-source frozen default for C3, external footage possible at C3b.
+- Books to: C3 firing (Cosmos latents → K3c domain-anchoring replication test) once data regen runs.
