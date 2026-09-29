@@ -1,0 +1,19 @@
+name = "i2i-ledger"
+main = "src/worker.js"
+compatibility_date = "2026-09-01"
+
+# D1 — the ledger table (schema.sql)
+# database_id must be filled in after `wrangler d1 create i2i-ledger` (see README-DEPLOY.md step 3).
+[[d1_databases]]
+binding = "DB"
+database_name = "i2i-ledger"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+# Vectorize — the shared semantic index (bge-m3, 1024 dims, cosine)
+[[vectorize]]
+binding = "INDEX"
+index_name = "i2i-index"
+
+# Workers AI — embeddings (@cf/baai/bge-m3)
+[ai]
+binding = "AI"
