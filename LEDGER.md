@@ -78,3 +78,9 @@ supersede with a new entry that names the old one.
 - Plan + script landed (glm-5.2 lane, reviewed): synth = 5 pinned lavfi families (K-law seeds, 224-crop→256), real = snapshot's 2 curated example mp4s with deterministic t0 grids. 96 train + 32 val × 2, T=16, 256×256 raw ≈ 768 MiB. Fail-loud gates, streaming sha256 manifest, list-form subprocess verified.
 - Open question booked: real domain rests on 2 sources — thin-source frozen default for C3, external footage possible at C3b.
 - Books to: C3 firing (Cosmos latents → K3c domain-anchoring replication test) once data regen runs.
+
+### [lucineer] R1 LIVE + embed shape fix + fleet plug-ins published
+- i2i-ledger live at https://i2i-ledger.casey-digennaro.workers.dev (D1 row-of-record + bge-m3 vectors + Vectorize /near). First live smoke booking exposed a response-shape bug (code expected data[0].embedding; Workers AI returns the vector at data[0]) — fixed, redeploying, re-verifying.
+- skills/i2i-ledger/SKILL.md — portable skill: any OpenClaw/agent adopts the shared brain from one file (HTTP or plain-git transport, doctrine included: failures are first-class, /near before starting unfamiliar work).
+- docs/HANDOFFS.md — 5 delegable open questions with exact deliverables + claim protocol: H1 C3b real-footage curation (browser agent), H2 bf16 Cosmos vision check (≥12GB VRAM box, probe script portable), H3 MicroMoth→IonQ recon (research-only, parked for weeks), H4 rack-flip visual verify (any working-browser box), H5 Liquid GGUF re-pull + baseline (any Ollama box).
+- Books to: fleet adoption of the shared brain; handoff claims via books_to: handoff:<id>.

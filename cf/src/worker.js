@@ -53,7 +53,14 @@ function normalizeTs(value) {
 
 async function embed(env, text) {
   const res = await env.AI.run(EMBED_MODEL, { text: [text] });
-  const vector = res && res.data && res.data[0] && res.data[0].embedding;
+  // Workers AI returns { shape, data: [[...floats]] } — data[0] IS the vector.
+  // (bge-m3 smoke-test fix 2026-09-29: code previously expected data[0].embedding.)
+  const raw = res && Array.isArray(res.data) ? res.data[0] : null;
+  const vector = Array.isArray(raw)
+    ? raw
+    : raw && Array.isArray(raw.embedding)
+      ? raw.embedding
+      : null;
   if (!Array.isArray(vector) || vector.length !== EMBED_DIMS) {
     throw new Error("bad embedding from " + EMBED_MODEL);
   }
