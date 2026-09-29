@@ -4,6 +4,22 @@
 > shows how the language's *constraints* shape the cell — what production-
 > ready means in each idiom.
 
+## Coordination layer (2026-09-29)
+
+This repo is also the fleet's **I2I coordination ledger** — instance-to-instance.
+Every agent books what it learns to [LEDGER.md](LEDGER.md); every other agent
+reads it before building, so the fleet builds with each other's insight in the
+loop. Protocol (plain git, any agent): [AGENTS.md](AGENTS.md). Cloudflare
+synergy backend (Workers + Vectorize + D1 — searchable meaning over every
+booking): [docs/cf-synergy-backend.md](docs/cf-synergy-backend.md). Vision
+PoC — the plato-room as a Reason-style rack, front = ActiveLog, back =
+ActiveLedger: [docs/rack-flip.html](docs/rack-flip.html).
+
+The fit is the point: this repo already lives the anti-GAN shape — one
+doctrine, three distant languages, three different definitions of done —
+many routes to the same answer. The language-family cells below are the
+original heart of the repo, untouched.
+
 The point is not to port the same code. The point is that each language's
 constraints make a different cell. The cell is the same doctrine; the
 shape of the doctrine is what each language carves out of it.
