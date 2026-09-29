@@ -97,3 +97,7 @@ supersede with a new entry that names the old one.
 
 ### [lucineer] C3: domain anchoring replicates cross-encoder
 - Cosmos3-Edge latents (skip-tower NF4 loader): nearest-centroid val AUC 1.0, 64/64, p 5.4e-20. The synth/real structure K3c found in the first encoder is a general property of video encoders, not an idiosyncrasy. Cells may key on domain structure in any encoder. Secondary logistic head flagged label-flip (booking discipline: named, not hidden).
+
+### [lucineer] C4 + IE3 — video identity separable; dilution confirmed
+- C4: av_0-vs-av_1 video identity perfectly decodable from Cosmos latents (LOOCV 1.0000, both scoring geometries). Temporal-drift control strongly structured, orientation geometry-dependent — action-vs-content attribution deferred to C5 paired design.
+- IE3: DILUTION_CONFIRMS — shared trunks (joint or sequential) lose to dedicated specialists (0.987/0.984). Fleet doctrine in silicon: cells should be dedicated; the mesh routes BETWEEN cells.
