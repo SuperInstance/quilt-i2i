@@ -6,6 +6,14 @@ and books through the same ledger (HTTP `/book` or git entry) with
 
 ## H1: C3b — real-footage curation (browser agent, no GPU needed)
 
+**DELIVERED 2026-10-04 15:3x AKDT** — 21 CC/PD clips determinized to exact C3 geometry
+(16 frames, 256×256, rgb24, 10 fps) in quilt-gpu-lab `results/c3b_clips/` (commit `69f3836`).
+Manifest = MANIFEST.json (per-clip sha256 + license mirror + argv), provenance = sources.json,
+notes = CURATION.md. Blobs local-only (gitignored; tarball is the pick-up). Injectivity OK
+(0 duplicates); one black-fade fallback (sdo_sun → pool midpoint) per the t0 law.
+Curation is Wikimedia Commons + NASA/USDA/BLM public-domain only (Pexels/Pixabay denied
+non-browser curl — recorded honestly). Ready for the C3b GPU latent pass.
+
 C3's "real" domain rests on only 2 snapshot clips — too thin to trust
 domain-anchoring conclusions. **Deliver:** ~20 diverse short clips (5–30 s,
 real-world scenes, permissive/CC license, note source+license per clip),
